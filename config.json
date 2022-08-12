@@ -1,0 +1,17 @@
+{
+  "baseUrl": "https://day09-18200-sql-124h-irs.dv.lan/km/api/latest",
+  "siteName": "day09_18200_sql_124h",
+  "apiUser": "apiUser",
+  "apiPassword": "apiUserPassword",
+  "consoleUser": "consoleUser",
+  "consolePassword": "consoleUserPassword",
+  "filesToUpload": [
+    "d:/dev/files/1.txt",
+    "d:/attachments/1.png"
+  ],
+  "payloadLocation": "import.json",
+  "localeId": "en_US",
+  "enableLogging": true,
+  "ignoreSSL": true
+}
+

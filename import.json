@@ -1,0 +1,27 @@
+{
+  "content" : {
+	  "isForEdit":true,
+	  "views":[
+		{
+            "recordId": "9B92DE0F2C9A41BCBFB2FADA41AF6CDB",
+            "referenceKey": "TENANT",
+            "name": "okcs_test"
+		}
+	  ],
+	  "locale":{
+			"recordId":"en_US"
+	  },
+	  "contentType":{
+                "recordId": "01710549915899015f6dae64e9007ff9",
+                "referenceKey": "TWOFILES",
+                "name": "TWOFILES"
+	  },
+	  "priority":"PRIORITY_0",
+	  "xml":"<TWOFILES><TITLE><![CDATA[Second file is a image]]></TITLE><FILE1 SIZE='40'>1.txt</FILE1><FILE2 SIZE='1453'>1.png</FILE2></TWOFILES>"	
+  },
+  "contentModificationQualifier":{
+		"ipAddress":"",
+		"publish":true,
+		"bypassWorkflowAndPublish":true
+  }  
+}

@@ -1,0 +1,78 @@
+<!--
+ Copyright (c) 2016, Oracle Corporation and/or its affiliates. All rights reserved.
+
+ The sample code in this document or accessed through this document is not certified or
+ supported by Oracle. It is intended for educational or testing purposes only. Use of this
+ sample code implies acceptance of the License Agreement
+ (http://www.oracle.com/technetwork/licenses/standard-license-152015.html).package oracle.km.demo;
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>oracle.km.demo</groupId>
+  <artifactId>ContentUploadSample</artifactId>
+  <version>1.0</version>
+  <name>ContentUploadSample</name>
+  <dependencies>
+    <dependency>
+	  <groupId>org.apache.httpcomponents</groupId>
+	  <artifactId>httpmime</artifactId>
+	  <version>4.5.2</version>
+	</dependency>	
+    <dependency>
+	<groupId>org.apache.httpcomponents</groupId>
+	<artifactId>httpclient</artifactId>
+	<version>4.5.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>	
+			<plugin>
+			  <groupId>org.apache.maven.plugins</groupId>
+			  <artifactId>maven-shade-plugin</artifactId>
+			  <version>2.4.3</version>
+			  <executions>
+			     <!-- Run shade goal on package phase -->
+			    <execution>
+				<phase>package</phase>
+				<goals>
+					<goal>shade</goal>
+				</goals>
+					<configuration>
+					  <transformers>
+						<!-- add Main-Class to manifest file -->
+		                     <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+							<mainClass>oracle.km.demo.ContentUploadSample</mainClass>
+						</transformer>
+					  </transformers>
+					  <filters>
+				        <filter>
+				            <artifact>*:*</artifact>
+				            <excludes>
+				                <exclude>META-INF/*.SF</exclude>
+				                <exclude>META-INF/*.DSA</exclude>
+				                <exclude>META-INF/*.RSA</exclude>
+				            </excludes>
+				        </filter>
+				    </filters>
+					</configuration>
+			      </execution>
+			  </executions>
+			</plugin>
+    </plugins>
+  </build>
+</project>

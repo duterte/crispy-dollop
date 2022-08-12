@@ -1,0 +1,66 @@
+{
+  "isForEdit": true,
+  "views": [
+    {
+      "recordId": "01023301fa2ff5017b67a22e56007fea",
+      "referenceKey": "BRAIN_VIEW",
+      "name": "Brain View",
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://brain--tst2-irs.custhelp.com:443/km/api/latest/views/01023301fa2ff5017b67a22e56007fea",
+          "mediaType": "application/json, application/xml",
+          "method": "GET"
+        }
+      ]
+    },
+    {
+      "recordId": "AEDE2BDB5B524A489557139F36726CF0",
+      "referenceKey": "TENANT",
+      "name": "brain",
+      "links": [
+        {
+          "rel": "canonical",
+          "href": "https://brain--tst2-irs.custhelp.com:443/km/api/latest/views/AEDE2BDB5B524A489557139F36726CF0",
+          "mediaType": "application/json, application/xml",
+          "method": "GET"
+        }
+      ]
+    }
+  ],
+  "contentType": {
+    "recordId": "01023403ebd57bb017c95032f85007190",
+    "referenceKey": "ALERTS",
+    "name": "Alerts",
+    "links": [
+      {
+        "rel": "canonical",
+        "href": "https://brain--tst2-irs.custhelp.com:443/km/api/latest/contentTypes/01023403ebd57bb017c95032f85007190",
+        "mediaType": "application/json, application/xml",
+        "method": "GET"
+      }
+    ]
+  },
+  "priority": "PRIORITY_20",
+  "checkedOut": false,
+  "xml": "<ALERTS><TITLE><![CDATA[Test Article Made by German Ochea]]></TITLE><BODY><![CDATA[Sample body]]></BODY><FILE SIZE=\"9720\"><![CDATA[Book1.xlsx]]></FILE></ALERTS>",
+  "userGroups": [],
+  "categories": [
+    {
+      "recordId": "51A59BF130A04E41B8E565C44DFE1A2D",
+      "referenceKey": "RN_CATEGORY_43",
+      "objectId": "004",
+      "name": "Network",
+      "externalId": 43,
+      "externalType": "CATEGORY"
+    },
+    {
+      "recordId": "CD145A877EB14A188A473356B0A538AF",
+      "referenceKey": "RN_CATEGORY_73",
+      "objectId": "007",
+      "name": "Territory",
+      "externalId": 73,
+      "externalType": "CATEGORY"
+    }
+  ]
+}
